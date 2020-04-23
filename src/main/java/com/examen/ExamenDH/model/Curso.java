@@ -45,7 +45,8 @@ public class Curso {
 		this.codigoCurso = codigoCurso;
 	}
 	
-	public boolean equals(Curso curso) {
+	public boolean equals(Object object) {
+		Curso curso = (Curso) object;
 		return this.getCodigoCurso() == curso.getCodigoCurso();
 	}
 

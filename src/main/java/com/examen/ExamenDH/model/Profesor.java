@@ -42,7 +42,8 @@ public abstract class Profesor {
 		this.codigoProfesor = codigoProfesor;
 	}
 	
-	public boolean equals(Profesor profesor) {
+	public boolean equals(Object object) {
+		Profesor profesor = (Profesor) object;
 		return this.getCodigoProfesor() == profesor.getCodigoProfesor();
 	}
 

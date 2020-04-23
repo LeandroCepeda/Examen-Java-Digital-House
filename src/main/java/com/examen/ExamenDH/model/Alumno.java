@@ -44,7 +44,8 @@ public class Alumno {
 		this.codigoAlumno = codigoAlumno;
 	}
 	
-	public boolean equals(Alumno alumno) {
+	public boolean equals(Object object) {
+		Alumno alumno = (Alumno) object;
 		return this.getCodigoAlumno() == alumno.getCodigoAlumno();
 	}
 	

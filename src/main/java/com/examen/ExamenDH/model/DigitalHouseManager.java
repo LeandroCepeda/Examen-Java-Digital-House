@@ -134,16 +134,19 @@ public class DigitalHouseManager {
 					curso.setProfesorAdjunto((ProfesorAdjunto) profesor);
 				}
 			}	
-		}
-		
-		
-		
-		
-		
+		}	
 	}
 	
-	
-	
-	
-
+	public Alumno actualizaAlumno(Alumno alumnoAModificar) {
+		Alumno alumnoModificado = null;
+		for (Alumno alumno : alumnos) {
+			if(alumno.getCodigoAlumno() == alumnoAModificar.getCodigoAlumno()) {
+				alumno.setNombre(alumnoAModificar.getNombre());
+				alumno.setApellido(alumnoAModificar.getApellido());
+				alumno.setCodigoAlumno(alumnoAModificar.getCodigoAlumno());
+				alumnoModificado = alumno;
+			}
+			}
+		return alumnoModificado;
+		}
 }
